@@ -1,0 +1,55 @@
+
+.hero {
+  @include cf;
+  margin-bottom: 100px;
+  border-bottom: 1px solid $lt-grey;
+}
+
+.hero .wrapper {
+  padding-top: 36px;
+  padding-bottom: 84px;
+}
+
+.hero--title {
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.hero-form {
+  width: 296px;
+  padding: 30px;
+  background: linear-gradient($gradient-grey-1, $gradient-grey-2);
+}
+
+.hero-form--title {
+  @include font-size(24px);
+  margin-bottom: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-form--title .icon-arrow {
+  width: 24px;
+  height: 24px;
+  vertical-align: -3px;
+  margin-right: 4px;
+  fill: $pink;
+}
+
+.hero-form--input {
+  background: $grey;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
+}
+
+.hero-form .btn {
+  width: 100%;
+}
+
+.hero-form .form-helper {
+  @include font-size(13px);
+  @include line-height(18px);
+  padding-top: 24px;
+  color: #fff;
+  text-align: center;
+}
+

@@ -1,0 +1,56 @@
+
+a {
+  @include global-transition(0.1s);
+  color: $pink;
+
+	&:hover {
+    color: $dk-pink;
+	}
+}
+
+@mixin btn {
+  @include global-transition(0.1s);
+  @include font-size(18px);
+  display: block;
+  padding: 9px 16px 7px;
+  background-color: $pink;
+  border-radius: 1px;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.5);
+  font-family: $sans;
+  color: #fff;
+  text-align: center;
+
+  @include bp-min-width($medium) {
+    display: inline-block;
+  }
+
+  &:hover {
+    background-color: $dk-pink;
+    color: #fff;
+  }
+}
+
+.btn {
+  @include btn;
+}
+
+.btn__white {
+  background-color: #fff;
+  color: $pink;
+}
+
+.btn__fixed-width {
+  width: 260px;
+}
+
+input[type="submit"],
+input[type="button"],
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  @include bp-max-width($small) {
+    width: 100%;
+  }
+}

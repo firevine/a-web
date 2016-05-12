@@ -1,0 +1,13 @@
+
+.site-footer {
+  @include cf;
+  background: #000;
+}
+
+.site-footer .wrapper {
+  padding: $base 0;
+}
+
+.site-footer--copyright {
+  color: $pink;
+}

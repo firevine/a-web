@@ -1,0 +1,25 @@
+
+.cta-section {
+  background: #000;
+  text-align: center;
+}
+
+.cta-section .wrapper {
+  padding: $base*4 0;
+}
+
+.cta--title {
+  margin-bottom: 36px;
+  color: $pink;
+}
+
+.cta--btn {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.cta--phone-number {
+  display: inline-block;
+  vertical-align: -5px;
+  color: $pink;
+}

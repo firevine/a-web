@@ -1,0 +1,18 @@
+
+.financing {
+  background: $pink;
+}
+
+.financing--title {
+  @include font-size(76px);
+  opacity: .85;
+  margin-bottom: $base*2;
+  color: #fff;
+  font-family: $sans-cond;
+  font-weight: $bold;
+  text-transform: uppercase;
+}
+
+.financing--subtitle {
+  margin-bottom: $base;
+}

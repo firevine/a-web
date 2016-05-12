@@ -1,0 +1,21 @@
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+[class^="icon-"] {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-calendar {
+  width: 16px;
+  height: 20px;
+  fill: #fff;
+}
+
+.icon-clock {
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+}

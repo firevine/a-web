@@ -1,0 +1,19 @@
+
+.arrow-list {
+  margin-bottom: 36px;
+}
+
+.arrow-list--item {
+  @include font-size(28px);
+  padding-left: 30px;
+  background: $icon-arrow-pink no-repeat 0 2px;
+  background-size: 14px 14px;
+}
+
+.arrow-list--item:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.arrow-list--item__white-arrow {
+  background-image: $icon-arrow-white;
+}
