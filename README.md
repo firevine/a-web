@@ -1,3 +1,3 @@
-# Nousot Dashboard
+# Look Dental
 
 Static Build
