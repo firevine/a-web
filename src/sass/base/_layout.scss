@@ -8,6 +8,7 @@ html {
 .wrapper {
   @include cf;
   position: relative;
+  width: 94%;
   max-width: 942px;
   margin: 0 auto;
   padding: $base*3.5 0;
@@ -16,6 +17,11 @@ html {
 .site-main {
   padding-top: 72px;
 }
+
+.section-content {
+  position: relative;
+  z-index: 10;
+ }
 
 .is-hidden {
   display: none;

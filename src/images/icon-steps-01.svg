@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="204px" height="204px" viewBox="0 0 204 204" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="13" y="26" width="166" height="166"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="166" height="166" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon-1">
+            <rect id="Rectangle-3" fill="#FFFFFF" transform="translate(102.000000, 102.000000) rotate(-352.000000) translate(-102.000000, -102.000000) " x="12" y="12" width="180" height="180"></rect>
+            <use id="Rectangle-2" stroke="#FFC50C" mask="url(#mask-2)" stroke-width="4" transform="translate(96.000000, 109.000000) rotate(-8.000000) translate(-96.000000, -109.000000) " xlink:href="#path-1"></use>
+            <rect id="Rectangle-1" fill="#00B2F0" transform="translate(101.636711, 102.051057) rotate(-8.000000) translate(-101.636711, -102.051057) " x="37.0069964" y="37.4213427" width="129.259429" height="129.259429"></rect>
+            <g id="Cal-Icon" transform="translate(59.000000, 65.000000)">
+                <path d="M0.804054054,25.6990378 L85.7894324,25.6990378" id="Stroke-1" stroke="#FFE183" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <polygon id="Fill-3" fill="#FFE183" points="14.9670811 39.8602608 20.6342162 39.8602608 20.6342162 34.1967338 14.9670811 34.1967338"></polygon>
+                <polygon id="Fill-4" fill="#FFE183" points="23.4665811 39.8602608 29.1337162 39.8602608 29.1337162 34.1967338 23.4665811 34.1967338"></polygon>
+                <polygon id="Fill-5" fill="#FFE183" points="31.9648784 39.8602608 37.6308108 39.8602608 37.6308108 34.1967338 31.9648784 34.1967338"></polygon>
+                <polygon id="Fill-6" fill="#FFE183" points="40.4643784 39.8602608 46.1315135 39.8602608 46.1315135 34.1967338 40.4643784 34.1967338"></polygon>
+                <polygon id="Fill-7" fill="#FFE183" points="48.9638784 39.8602608 54.6286081 39.8602608 54.6286081 34.1967338 48.9638784 34.1967338"></polygon>
+                <polygon id="Fill-8" fill="#FFE183" points="57.4597703 39.8602608 63.1269054 39.8602608 63.1269054 34.1967338 57.4597703 34.1967338"></polygon>
+                <polygon id="Fill-9" fill="#FFE183" points="65.960473 39.8602608 71.6264054 39.8602608 71.6264054 34.1967338 65.960473 34.1967338"></polygon>
+                <polygon id="Fill-10" fill="#FFE183" points="14.9670811 48.3609635 20.6342162 48.3609635 20.6342162 42.6950311 14.9670811 42.6950311"></polygon>
+                <polygon id="Fill-11" fill="#FFE183" points="23.4665811 48.3609635 29.1337162 48.3609635 29.1337162 42.6950311 23.4665811 42.6950311"></polygon>
+                <polygon id="Fill-12" fill="#FFE183" points="31.9648784 48.3609635 37.6308108 48.3609635 37.6308108 42.6950311 31.9648784 42.6950311"></polygon>
+                <polygon id="Fill-13" fill="#FFE183" points="40.4643784 48.3609635 46.1315135 48.3609635 46.1315135 42.6950311 40.4643784 42.6950311"></polygon>
+                <polygon id="Fill-14" fill="#FFE183" points="48.9638784 48.3609635 54.6286081 48.3609635 54.6286081 42.6950311 48.9638784 42.6950311"></polygon>
+                <polygon id="Fill-15" fill="#FFE183" points="57.4597703 48.3609635 63.1269054 48.3609635 63.1269054 42.6950311 57.4597703 42.6950311"></polygon>
+                <polygon id="Fill-16" fill="#FFE183" points="65.960473 48.3609635 71.6264054 48.3609635 71.6264054 42.6950311 65.960473 42.6950311"></polygon>
+                <polygon id="Fill-17" fill="#FFE183" points="14.9670811 56.8604635 20.6342162 56.8604635 20.6342162 51.1957338 14.9670811 51.1957338"></polygon>
+                <polygon id="Fill-18" fill="#FFE183" points="23.4665811 56.8604635 29.1337162 56.8604635 29.1337162 51.1957338 23.4665811 51.1957338"></polygon>
+                <polygon id="Fill-19" fill="#FFE183" points="31.9648784 56.8604635 37.6308108 56.8604635 37.6308108 51.1957338 31.9648784 51.1957338"></polygon>
+                <polygon id="Fill-20" fill="#FFE183" points="40.4643784 56.8604635 46.1315135 56.8604635 46.1315135 51.1957338 40.4643784 51.1957338"></polygon>
+                <polygon id="Fill-21" fill="#FFE183" points="48.9638784 56.8604635 54.6286081 56.8604635 54.6286081 51.1957338 48.9638784 51.1957338"></polygon>
+                <polygon id="Fill-22" fill="#FFE183" points="57.4597703 56.8604635 63.1269054 56.8604635 63.1269054 51.1957338 57.4597703 51.1957338"></polygon>
+                <polygon id="Fill-23" fill="#FFE183" points="65.960473 56.8604635 71.6264054 56.8604635 71.6264054 51.1957338 65.960473 51.1957338"></polygon>
+                <polygon id="Fill-24" fill="#FFE183" points="14.9670811 65.3575581 20.6342162 65.3575581 20.6342162 59.6916257 14.9670811 59.6916257"></polygon>
+                <polygon id="Fill-25" fill="#FFE183" points="23.4665811 65.3575581 29.1337162 65.3575581 29.1337162 59.6916257 23.4665811 59.6916257"></polygon>
+                <polygon id="Fill-26" fill="#FFE183" points="31.9648784 65.3575581 37.6308108 65.3575581 37.6308108 59.6916257 31.9648784 59.6916257"></polygon>
+                <polygon id="Fill-27" fill="#FFE183" points="40.4643784 65.3575581 46.1315135 65.3575581 46.1315135 59.6916257 40.4643784 59.6916257"></polygon>
+                <polygon id="Fill-28" fill="#FFE183" points="48.9638784 65.3575581 54.6286081 65.3575581 54.6286081 59.6916257 48.9638784 59.6916257"></polygon>
+                <polygon id="Fill-29" fill="#FFE183" points="57.4597703 65.3575581 63.1269054 65.3575581 63.1269054 59.6916257 57.4597703 59.6916257"></polygon>
+                <polygon id="Fill-30" fill="#FFE183" points="65.960473 65.3575581 71.6264054 65.3575581 71.6264054 59.6916257 65.960473 59.6916257"></polygon>
+                <polygon id="Stroke-31" stroke="#FFE183" stroke-width="3" stroke-linecap="round" points="17.8016108 0.202702703 17.8016108 17.1980946 17.8016108 11.5345676 17.8016108 5.86743243"></polygon>
+                <polygon id="Stroke-33" stroke="#FFE183" stroke-width="3" stroke-linecap="round" points="68.7931986 0.202702703 68.7931986 17.1980946 68.7931986 11.5345676 68.7931986 5.86743243"></polygon>
+                <polygon id="Stroke-35" stroke="#FFE183" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="0.804054054 73.8582608 85.7894324 73.8582608 85.7894324 8.70184189 0.804054054 8.70184189"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

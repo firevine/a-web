@@ -2,3 +2,40 @@
 .services .wrapper {
   padding: $base*4 0;
 }
+
+.services--image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  background: $bg-services no-repeat center bottom;
+  background-size: 400px auto;
+
+  @include bp-min-width($medium) {
+    top: 0;
+    right: -40px;
+    width: 720px;
+    height: 100%;
+    background: $bg-services-2x no-repeat center bottom;
+    background-size: 750px auto;
+  }
+}
+
+.services--image-title {
+  @include font-size(136px);
+  position: absolute;
+  top: $base*3;
+  right: 0;
+  z-index: 10;
+  opacity: .85;
+  font-family: $sans-cond;
+  font-weight: $bold;
+  line-height: .75;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.services--image-title [class^="title__"] {
+  display: block;
+}

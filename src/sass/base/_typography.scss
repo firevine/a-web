@@ -16,26 +16,6 @@ h1,h2,h3,h4,h5 {
   line-height: 1;
 }
 
-// h1 {
-//   @include font-size(28px);
-// }
-
-// h2 {
-//   @include font-size(28px);
-// }
-
-// h3 {
-//   @include font-size(19px);
-// }
-
-// h4 {
-//   @include font-size(17px);
-// }
-
-// h5 {
-//   @include font-size(15px);
-// }
-
 strong, b {
   font-weight: $bold;
 }
@@ -82,4 +62,25 @@ em {
 .title__xxsmall {
   @include font-size(13px);
 }
+
+.title__blue {
+  color: $blue;
+}
+
+.title__teal {
+  color: $teal;
+}
+
+.title__yellow {
+  color: $yellow;
+}
+
+.title__pink {
+  color: $pink;
+}
+
+.title__orange {
+  color: $orange;
+}
+
 
