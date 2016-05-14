@@ -33,7 +33,7 @@ em {
 .section-title--line {
   display: inline-block;
   margin-bottom: 8px;
-  padding: 12px 16px 10px;
+  padding: 16px 16px 14px;
   background: $black;
   color: #fff;
 }
@@ -83,4 +83,7 @@ em {
   color: $orange;
 }
 
+.title__black {
+  color: $black;
+}
 

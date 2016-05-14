@@ -1,0 +1,34 @@
+
+.insurance {
+
+}
+
+.insurance--image {
+  position: absolute;
+  top: $base*3;
+  right: -70px;
+  width: 600px;
+  height: 465px;
+  background: $bg-insurance-2x no-repeat center bottom;
+  background-size: cover;
+
+  @include bp-min-width($medium) {
+  }
+}
+
+.insurance--title {
+  @include absolute-center;
+  @include font-size(80px);
+  z-index: 10;
+  opacity: .85;
+  font-family: $sans-cond;
+  font-weight: $bold;
+  line-height: .85;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.insurance--title [class^="title__"] {
+  display: block;
+  width: 480px;
+}
