@@ -1,4 +1,26 @@
 
+.experience .wrapper {
+  @include bp-min-width($medium) {
+    padding-bottom: $base*8;
+  }
+}
+
 .experience--title {
+  max-width: 400px;
   margin-bottom: $base*2;
+}
+
+.experience .arrow-list {
+  max-width: 500px;
+}
+
+.experience--ebook {
+  position: absolute;
+  top: $base*3;
+  right: 0;
+  text-align: center;
+}
+
+.experience--image {
+  max-width: 410px;
 }

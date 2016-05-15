@@ -5,13 +5,15 @@
 
 .arrow-list--item {
   @include font-size(28px);
-  padding-left: 30px;
-  background: $icon-arrow-pink no-repeat 0 2px;
+  @include line-height(42px);
+  padding-left: 40px;
+  background: $icon-arrow-pink no-repeat 0 10px;
   background-size: 14px 14px;
-}
 
-.arrow-list--item:not(:last-child) {
-  margin-bottom: 18px;
+  @include bp-min-width($medium) {
+    @include font-size(28px);
+    @include line-height(42px);
+  }
 }
 
 .arrow-list--item__white-arrow {

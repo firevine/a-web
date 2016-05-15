@@ -9,5 +9,16 @@
 }
 
 .site-footer--copyright {
+  @include font-size(14px);
   color: $pink;
+
+  @include bp-min-width($small) {
+    float: left;
+  }
+}
+
+.site-footer--logo {
+  @include bp-min-width($small) {
+    float: right;
+  }
 }
