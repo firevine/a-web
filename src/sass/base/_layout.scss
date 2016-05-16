@@ -5,6 +5,12 @@ html {
   height: 100%;
 }
 
+body {
+  @include bp-min-width($large) {
+    padding-top: 72px;
+  }
+}
+
 .wrapper {
   @include cf;
   position: relative;
@@ -20,10 +26,6 @@ html {
 
 .site-main {
   overflow: hidden;
-
-  @include bp-min-width($large) {
-    padding-top: 72px;
-  }
 }
 
 .section-content {

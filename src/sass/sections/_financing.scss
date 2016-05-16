@@ -4,7 +4,9 @@
 }
 
 .financing .wrapper {
-  padding-bottom: $base*14;
+  @include bp-max-width($medium) {
+    padding-bottom: $base*14;
+  }
 }
 
 .financing--title {

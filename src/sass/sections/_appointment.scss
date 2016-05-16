@@ -20,7 +20,7 @@
   margin: 0 auto $base*2;
   text-align: center;
 
-  @include bp-max-width($tiny) {
+  @include bp-max-width($xsmall) {
     margin-bottom: $base;
   }
 }

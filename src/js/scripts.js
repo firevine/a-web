@@ -58,6 +58,8 @@ $(function(){
     });
   }
 
+  $('form input[placeholder]').auderoUnifiedPlaceholders();
+
   navToggle();
   modal();
   formToolTip();
