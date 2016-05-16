@@ -17,17 +17,13 @@
 }
 
 .appointment--title {
-  margin: 0 auto $base;
+  margin: 0 auto $base*2;
   text-align: center;
-
-  @include bp-min-width($medium) {
-    margin-bottom: $base*2;
-  }
 }
 
 .appointment--content {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 0 auto $base;
   color: #fff;
   text-align: center;
 
@@ -40,6 +36,12 @@
   @include cf;
   max-width: 640px;
   margin: 0 auto;
+}
+
+.appointment-form .col-1-2:first-child {
+  @include bp-max-width($medium) {
+    margin-bottom: 12px;
+  }
 }
 
 .appointment-form--input {
