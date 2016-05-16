@@ -9,8 +9,6 @@
 }
 
 .hero .wrapper {
-  padding-bottom: 0;
-
   @include bp-min-width($medium) {
     padding-top: $base*1.5;
     padding-bottom: $base*4;
