@@ -28,6 +28,8 @@
 .insurance--title {
   @include absolute-center;
   @include font-size(42px);
+  -webkit-transform: translate(-50%, -50%);
+  display: block;
   z-index: 10;
   opacity: .85;
   font-family: $sans-cond;

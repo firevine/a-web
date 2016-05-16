@@ -7,6 +7,7 @@
 
   @include bp-max-width($large) {
     padding: 12px 0;
+    text-align: center;
   }
 
   @include bp-min-width($large) {
@@ -25,11 +26,12 @@
 }
 
 .header-logo {
-  @include font-size(38px);
+  @include font-size(32px);
+  position: relative;
+  display: inline-block;
   font-family: $sans-cond;
   text-transform: uppercase;
   line-height: 1;
-  text-align: center;
 
   @include bp-max-width($large) {
     margin-bottom: 6px;
@@ -49,9 +51,18 @@
   color: $pink;
 }
 
-.header-nav {
-  text-align: center;
+.header-logo--tm {
+  @include font-size(10px);
+  position: absolute;
+  top: 2px;
+  right: -10px;
 
+  @include bp-min-width($large) {
+    top: 4px;
+  }
+}
+
+.header-nav {
   @include bp-min-width($large) {
     float: right;
   }
