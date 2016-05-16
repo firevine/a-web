@@ -19,6 +19,10 @@
 .appointment--title {
   margin: 0 auto $base*2;
   text-align: center;
+
+  @include bp-max-width($tiny) {
+    margin-bottom: $base;
+  }
 }
 
 .appointment--content {
