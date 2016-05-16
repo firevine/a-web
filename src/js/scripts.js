@@ -1,67 +1,27 @@
 $(function(){
 
-  var navToggle = function() {
-    var navParentLink = $('.product-nav__with-children');
-    var navArrowIcon = $('.product-nav--icon-arrow');
-    var navChildren = $('.product-nav--children');
+  navScroll = function() {
+    var navLink = $('.header-nav a, .header-logo a');
 
-    navParentLink.bind('click', function(e){
+    navLink.on('click', function(e) {
       e.preventDefault();
-      $(this).find(navArrowIcon).toggleClass('is-hidden');
-      $(this).find(navArrowIcon).toggleClass('is-visible');
-      $(this).parent().find(navChildren).toggleClass('is-active');
-    });
-  }
-
-
-  var modal = function() {
-    var modal = $('#modal');
-    var modalTrigger = $('.modal-trigger');
-    var modalClose = $('.modal-close');
-    var modalOverlay = $('.modal-overlay');
-
-    modalTrigger.bind('click', function(e){
-      e.preventDefault();
-      modal.toggleClass('is-active');
-    });
-
-    modalOverlay.bind('click', function(e){
-      e.preventDefault();
-      modal.toggleClass('is-active');
-    });
-
-    modalClose.bind('click', function(e){
-      e.preventDefault();
-      modal.toggleClass('is-active');
-    });
-
-  }
-
-  var userAccountLinks = function() {
-    var userAccountTrigger = $('.user-account--link');
-    var userLinksBubble = $('.user-links');
-
-    userAccountTrigger.on('click', function(e){
-      e.preventDefault();
-      $(this).parent().find(userLinksBubble).toggleClass('is-hidden');
-      $(this).parent().find(userLinksBubble).toggleClass('is-visible');
-    });
-  }
-
-  var formToolTip = function() {
-    var toolTipTrigger = $('.form-item--has-tooltip .icon-info');
-    var toolTipContainer = $('.form-tooltip');
-
-    toolTipTrigger.bind('click', function(e){
-      e.preventDefault();
-      $(this).parent().find(toolTipContainer).toggleClass('is-active');
+      var windowWidth = $(window).width();
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length && windowWidth >= 900) {
+        $('html,body').animate({
+          scrollTop: target.offset().top + -72
+        }, 1000);
+      } else if (target.length && windowWidth <= 900) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+      }
     });
   }
 
   $('form input[placeholder]').auderoUnifiedPlaceholders();
 
-  navToggle();
-  modal();
-  formToolTip();
+  navScroll();
 
 });
