@@ -3,6 +3,12 @@
   background: #000;
 }
 
+.certifications .wrapper {
+  @include bp-max-width($medium) {
+    padding-bottom: 0;
+  }
+}
+
 .certifications--list {
   text-align: center;
 }
@@ -10,10 +16,14 @@
 .certifications--list-item {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 40px;
+  margin: 0 20px $base;
   background-image: $sprite-cert-logos;
   background-repeat: no-repeat;
   background-size: 228px auto;
+
+  @include bp-min-width($medium) {
+    margin: 0 40px;
+  }
 }
 
 .certifications--list-item-01 {
