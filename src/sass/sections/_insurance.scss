@@ -1,4 +1,10 @@
 
+.insurance .wrapper {
+  @include bp-max-width($medium) {
+    padding-top: 0;
+  }
+}
+
 .insurance--image {
   position: relative;
   width: 100%;
@@ -26,7 +32,7 @@
   opacity: .85;
   font-family: $sans-cond;
   font-weight: $bold;
-  line-height: .85;
+  line-height: 1;
   text-transform: uppercase;
   text-align: center;
 
@@ -36,6 +42,7 @@
 
   @include bp-min-width($medium) {
     @include font-size(80px);
+    line-height: .85;
   }
 }
 

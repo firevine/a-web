@@ -4,22 +4,33 @@
   text-align: center;
 }
 
-.cta-section .wrapper {
-  padding: $base*4 0;
-}
-
 .cta--title {
-  margin-bottom: 36px;
+  margin-bottom: 12px;
   color: $pink;
+
+  @include bp-min-width($medium) {
+    margin-bottom: 36px;
+  }
 }
 
 .cta--btn {
-  display: inline-block;
-  margin-right: 20px;
+  @include bp-min-width($medium) {
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
+
+.cta-section--01 .cta--btn {
+  @include bp-max-width($medium) {
+    margin-bottom: 12px;
+  }
 }
 
 .cta--phone-number {
-  display: inline-block;
-  vertical-align: -5px;
   color: $pink;
+
+  @include bp-min-width($medium) {
+    display: inline-block;
+    vertical-align: -5px;
+  }
 }
