@@ -1,26 +1,59 @@
 
 .experience .wrapper {
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     padding-bottom: $base*8;
   }
 }
 
 .experience--title {
-  max-width: 400px;
-  margin-bottom: $base*2;
+  margin-bottom: $base;
+
+  @include bp-min-max($medium, $large) {
+    max-width: 360px;
+  }
+
+  @include bp-min-width($large) {
+    max-width: 400px;
+    margin-bottom: $base*2;
+  }
 }
 
 .experience .arrow-list {
-  max-width: 500px;
+  @include bp-min-max($medium, $large) {
+    max-width: 360px;
+  }
+
+  @include bp-min-width($large) {
+    max-width: 500px;
+  }
 }
 
 .experience--ebook {
-  position: absolute;
-  top: $base*3;
-  right: 0;
   text-align: center;
+
+  @include bp-min-width($medium) {
+    position: absolute;
+    top: $base*3;
+    max-width: 500px;
+  }
+
+  @include bp-min-max($medium, $large) {
+    right: -40px;
+  }
+
+  @include bp-min-width($large) {
+    right: 0;
+  }
 }
 
 .experience--image {
-  max-width: 410px;
+  text-align: center;
+
+  @include bp-max-width($medium) {
+    padding-top: $base;
+  }
+
+  @include bp-min-width($medium) {
+    max-width: 410px;
+  }
 }

@@ -47,9 +47,7 @@ em {
 }
 
 .title__xlarge {
-  @include bp-min-width($medium) {
-    @include font-size(60px);
-  }
+  @include font-size(42px);
 
   @include bp-min-width($large) {
     @include font-size(76px);
@@ -107,6 +105,8 @@ em {
 }
 
 .section-content p:last-of-type {
-  max-width: 400px;
+  @include bp-min-width($medium) {
+    max-width: 400px;
+  }
 }
 

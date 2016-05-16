@@ -3,23 +3,35 @@
   background: $pink;
 }
 
+.financing .wrapper {
+  padding-bottom: $base*14;
+}
+
 .financing--title {
   opacity: .85;
-  margin-bottom: $base*1.5;
+  margin-bottom: $base;
   color: #fff;
   font-family: $sans-cond;
   font-weight: $bold;
   text-transform: uppercase;
+
+  @include bp-min-width($medium) {
+    margin-bottom: $base*1.5;
+  }
 }
 
 .financing--subtitle {
-  max-width: 460px;
   margin-bottom: $base;
+
+  @include bp-min-width($medium) {
+    max-width: 460px;
+  }
 }
 
 .financing--image {
   position: absolute;
   top: 0;
+  right: 0;
   width: 400px;
   height: 100%;
   background: $bg-financing no-repeat center bottom;
