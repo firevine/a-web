@@ -1,20 +1,27 @@
 
 .insurance--image {
-  position: absolute;
-  top: $base*3;
-  right: -70px;
-  width: 600px;
-  height: 465px;
+  position: relative;
+  width: 100%;
+  height: 300px;
   background: $bg-insurance-2x no-repeat center bottom;
   background-size: cover;
 
   @include bp-min-width($medium) {
+    position: absolute;
+    top: $base*3;
+    right: -100px;
+    width: 600px;
+    height: 465px;
+  }
+
+  @include bp-min-width($large) {
+    right: -70px;
   }
 }
 
 .insurance--title {
   @include absolute-center;
-  @include font-size(80px);
+  @include font-size(42px);
   z-index: 10;
   opacity: .85;
   font-family: $sans-cond;
@@ -22,9 +29,20 @@
   line-height: .85;
   text-transform: uppercase;
   text-align: center;
+
+  @include bp-max-width($medium) {
+    width: 100%;
+  }
+
+  @include bp-min-width($medium) {
+    @include font-size(80px);
+  }
 }
 
 .insurance--title [class^="title__"] {
   display: block;
-  width: 480px;
+
+  @include bp-min-width($medium) {
+    width: 480px;
+  }
 }

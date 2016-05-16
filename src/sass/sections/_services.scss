@@ -14,11 +14,15 @@
 
   @include bp-min-width($medium) {
     top: 0;
-    right: -40px;
+    right: -160px;
     width: 720px;
     height: 100%;
     background: $bg-services-2x no-repeat center bottom;
     background-size: 750px auto;
+  }
+
+  @include bp-min-width($large) {
+    right: -40px;
   }
 }
 
@@ -34,6 +38,10 @@
   line-height: .75;
   text-transform: uppercase;
   text-align: right;
+
+  @include bp-min-width($large) {
+    @include font-size(136px);
+  }
 }
 
 .services--image-title [class^="title__"] {

@@ -1,16 +1,23 @@
 
 .header {
   @include cf;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 20;
   width: 100%;
-  height: 72px;
-  padding-top: 16px;
   background: #fff;
   border-bottom: 1px solid $lt-grey;
+
+  @include bp-max-width($large) {
+    padding: 12px 0;
+  }
+
+  @include bp-min-width($large) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    height: 72px;
+    padding-top: 16px;
+  }
 }
 
 .header .wrapper {
@@ -19,10 +26,19 @@
 
 .header-logo {
   @include font-size(38px);
-  float: left;
   font-family: $sans-cond;
   text-transform: uppercase;
   line-height: 1;
+  text-align: center;
+
+  @include bp-max-width($large) {
+    margin-bottom: 6px;
+  }
+
+  @include bp-min-width($large) {
+    @include font-size(38px);
+    float: left;
+  }
 }
 
 .header-logo--link {
@@ -34,14 +50,29 @@
 }
 
 .header-nav {
-  float: right;
+  text-align: center;
+
+  @include bp-min-width($large) {
+    float: right;
+  }
 }
 
 .header-nav--item {
-  @include font-size(18px);
-  @include line-height(38px);
-  float: left;
-  margin-right: 40px;
+  @include font-size(14px);
+  display: inline-block;
+  margin: 0 4px;
+
+  @include bp-min-width($large) {
+    @include font-size(16px);
+    margin: 0 12px;
+  }
+
+  @include bp-min-width($large) {
+    @include font-size(18px);
+    @include line-height(38px);
+    float: left;
+    margin-right: 40px;
+  }
 }
 
 .header-nav--item a {

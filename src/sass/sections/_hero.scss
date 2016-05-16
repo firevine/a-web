@@ -1,44 +1,65 @@
 
 .hero {
   @include cf;
-  margin-bottom: 100px;
-  border-bottom: 1px solid $lt-grey;
+
+  @include bp-min-width($medium) {
+    margin-bottom: 100px;
+    border-bottom: 1px solid $lt-grey;
+  }
 }
 
 .hero .wrapper {
-  padding-top: 36px;
-  padding-bottom: 84px;
-}
-
-.hero--image {
-  position: absolute;
-  top: 0;
-  left: -280px;
-  width: 1000px;
-  height: 100%;
-  background: $bg-hero no-repeat center bottom;
-  background-size: 500px auto;
+  padding-bottom: 0;
 
   @include bp-min-width($medium) {
-    background: $bg-hero-2x no-repeat left bottom;
-    background-size: 1000px auto;
+    padding-top: $base*1.5;
+    padding-bottom: $base*4;
   }
 }
 
 .hero--title {
   position: relative;
   z-index: 10;
-  margin: 0 auto 48px;
+  margin: 0 auto $base*7;
   text-align: center;
+
+  @include bp-min-width($medium) {
+    margin-bottom: $base*2;
+  }
+}
+
+.hero--image {
+  position: absolute;
+  top: 0;
+  left: -4%;
+  right: -4%;
+  width: 100%;
+  height: 360px;
+  background: $bg-hero no-repeat center bottom;
+  background-size: 100% auto;
+
+  @include bp-min-width($medium) {
+    top: 0;
+    left: -280px;
+    width: 1000px;
+    height: 100%;
+    background: $bg-hero-2x no-repeat left bottom;
+    background-size: 1000px auto;
+  }
 }
 
 .hero-form {
   position: relative;
   z-index: 10;
-  float: right;
-  width: 296px;
+  width: 360px;
+  margin: 0 auto;
   padding: 30px 30px 0;
   background: linear-gradient($gradient-grey-1, $gradient-grey-2);
+
+  @include bp-min-width($medium) {
+    float: right;
+    width: 296px;
+  }
 }
 
 .hero-form--title {
