@@ -1,16 +1,22 @@
 
 .services .wrapper {
-  padding: $base*4 0;
+  @include bp-max-width($medium) {
+    padding-bottom: $base*15;
+  }
 }
 
 .services--image {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 400px;
   height: 100%;
   background: $bg-services no-repeat center bottom;
   background-size: 400px auto;
+
+  @include bp-max-width($medium) {
+    max-width: 400px;
+    width: 100%;
+  }
 
   @include bp-min-width($medium) {
     top: 0;
@@ -27,23 +33,26 @@
 }
 
 .services--image-title {
-  @include font-size(136px);
-  position: absolute;
-  top: $base*3;
-  right: 0;
-  z-index: 10;
-  opacity: .85;
+  @include font-size(42px);
+  margin-bottom: $base;
   font-family: $sans-cond;
   font-weight: $bold;
-  line-height: .75;
   text-transform: uppercase;
-  text-align: right;
 
-  @include bp-min-width($large) {
+  @include bp-min-width($medium) {
     @include font-size(136px);
+    position: absolute;
+    top: $base*3;
+    right: 0;
+    z-index: 10;
+    opacity: .85;
+    line-height: .75;
+    text-align: right;
   }
 }
 
 .services--image-title [class^="title__"] {
-  display: block;
+  @include bp-min-width($medium) {
+    display: block;
+  }
 }

@@ -28,12 +28,13 @@ em {
   @include font-size(19px);
   @include line-height(24px);
   max-width: 420px;
-  margin-bottom: 36px;
+  margin-bottom: $base;
 
   @include bp-min-width($medium) {
     @include font-size(28px);
     @include line-height(32px);
     max-width: 600px;
+    margin-bottom: $base*1.5;
   }
 }
 

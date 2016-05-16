@@ -1,6 +1,10 @@
 
 .arrow-list {
-  margin-bottom: 36px;
+  margin-bottom: $base;
+
+  @include bp-min-width($medium) {
+    margin-bottom: $base*1.5;
+  }
 }
 
 .arrow-list--item {
